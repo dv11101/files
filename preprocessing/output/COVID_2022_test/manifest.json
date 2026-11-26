@@ -1,0 +1,47 @@
+{
+  "domain": "COVID",
+  "cutoff_year": 2022,
+  "threshold": 85.0,
+  "train_rule": "year <= cutoff",
+  "test_rule": "year > cutoff",
+  "source_dir": "E:\\c2_full_bundle\\c2_full_bundle\\component2_entity_relation_extraction\\output",
+  "source_sha256": {
+    "entities": "1577ae93236bf0cfc6c09b541470c8a7d419d18df928425b8900e2fde17d8d7c",
+    "extracted": "b886e09b951a2f66f772d0f708faf28dd011dbe11094e112dcf3c4614b2490be",
+    "relations": "4b0b2442e447a910ba7978cd88fb383a1ad591de173f4e3e6729a417d45ba7b0"
+  },
+  "rebuild_after_reextraction": true,
+  "note": "Source C2 outputs may predate the enlarged corpus. Re-run this script after the friend returns new extraction outputs.",
+  "counts": {
+    "source_entities": 18602,
+    "source_papers": 1200,
+    "source_relations": 7711,
+    "train_entities": 11656,
+    "train_papers": 800,
+    "train_relations": 4820,
+    "test_entities": 6946,
+    "test_papers": 400,
+    "test_relations": 2891,
+    "train_surface_forms": 6441,
+    "train_canonical_entities": 5837,
+    "test_entities_mapped_to_train": 2920,
+    "test_entities_unmapped": 4026
+  },
+  "year_ranges": {
+    "train": [
+      2019,
+      2022
+    ],
+    "test": [
+      2023,
+      2024
+    ]
+  },
+  "leak_checks": {
+    "no_future_paper_in_train": true,
+    "train_test_paper_ids_disjoint": true,
+    "test_canonical_ids_subset_of_train": true,
+    "crosswalk_complete": true
+  },
+  "elapsed_seconds": 4.94
+}

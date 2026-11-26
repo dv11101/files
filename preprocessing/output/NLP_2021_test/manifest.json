@@ -1,0 +1,47 @@
+{
+  "domain": "NLP",
+  "cutoff_year": 2021,
+  "threshold": 85.0,
+  "train_rule": "year <= cutoff",
+  "test_rule": "year > cutoff",
+  "source_dir": "E:\\c2_full_bundle\\c2_full_bundle\\component2_entity_relation_extraction\\output",
+  "source_sha256": {
+    "entities": "7e6cbfa66a95350976dd9bae9475cc178d17d811d09282cd2cfcbb498eb46b6f",
+    "extracted": "eb169a3c77298e260e672c991815a98ef3386982bd82481e9631d9e03d8e9ebd",
+    "relations": "521cedd8933b0fc88ba4a3d2cc713ad1f1c772c3e24481de3c6ed977eda7206e"
+  },
+  "rebuild_after_reextraction": true,
+  "note": "Source C2 outputs may predate the enlarged corpus. Re-run this script after the friend returns new extraction outputs.",
+  "counts": {
+    "source_entities": 59862,
+    "source_papers": 2800,
+    "source_relations": 26868,
+    "train_entities": 32528,
+    "train_papers": 1600,
+    "train_relations": 14635,
+    "test_entities": 27334,
+    "test_papers": 1200,
+    "test_relations": 12233,
+    "train_surface_forms": 16869,
+    "train_canonical_entities": 14254,
+    "test_entities_mapped_to_train": 10875,
+    "test_entities_unmapped": 16459
+  },
+  "year_ranges": {
+    "train": [
+      2018,
+      2021
+    ],
+    "test": [
+      2022,
+      2024
+    ]
+  },
+  "leak_checks": {
+    "no_future_paper_in_train": true,
+    "train_test_paper_ids_disjoint": true,
+    "test_canonical_ids_subset_of_train": true,
+    "crosswalk_complete": true
+  },
+  "elapsed_seconds": 31.41
+}
