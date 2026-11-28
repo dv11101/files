@@ -1,0 +1,23 @@
+{
+  "pubmedbert": {
+    "model_key": "pubmedbert",
+    "model": "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext",
+    "task": "relation_classification",
+    "split": "test",
+    "precision": 0.687,
+    "recall": 0.6355,
+    "f1": 0.6603,
+    "n_test_sentences": 454,
+    "n_test_pairs": 3248,
+    "n_pos_pairs": 974,
+    "label_set": [
+      "Used-for",
+      "Feature-of",
+      "Hyponym-of",
+      "Part-of",
+      "Compare",
+      "Conjunction",
+      "Evaluate-for"
+    ]
+  }
+}
